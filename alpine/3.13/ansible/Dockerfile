@@ -1,0 +1,10 @@
+FROM sh0shin/alpine-3.13-base
+
+# Packages
+RUN apk update
+RUN apk add \
+  sudo \
+  python3 py3-pip py3-wheel py3-setuptools
+
+# Cleanup
+RUN true
