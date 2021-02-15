@@ -1,5 +1,7 @@
 FROM sh0shin/alpine-3.13-base
 
+LABEL maintainer="Chris 'sh0shin' Frage"
+
 # Packages
 RUN apk update
 RUN apk add \

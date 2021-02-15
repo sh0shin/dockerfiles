@@ -1,4 +1,5 @@
 FROM sh0shin/ubuntu-18.04-base:latest
+LABEL maintainer="Chris 'sh0shin' Frage"
 
 # Packages
 ENV DEBIAN_FRONTEND=noninteractive

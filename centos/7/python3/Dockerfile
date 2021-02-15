@@ -1,4 +1,5 @@
-FROM sh0shin/centos-8-base
+FROM sh0shin/centos-7-base
+LABEL maintainer="Chris 'sh0shin' Frage"
 
 # Packages
 RUN yum update -y
