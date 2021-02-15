@@ -10,8 +10,9 @@ do
   docker_path="${docker_fullpath//$docker_root\//}"
   docker_name="${docker_path//\//-}"
   (
+    echo "$docker_name"
     cd "$docker_fullpath" || return
     docker build -t "$docker_space/$docker_name" .
-    echo docker push "$docker_space/$docker_name"
+    docker push "$docker_space/$docker_name"
   )
 done < <(find "$docker_root" -type f -name 'Dockerfile' -print0 | sort -z)
