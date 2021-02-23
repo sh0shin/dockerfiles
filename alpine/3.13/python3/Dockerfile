@@ -9,4 +9,4 @@ RUN apk add \
   python3 py3-pip py3-wheel py3-setuptools
 
 # Cleanup
-RUN true
+RUN rm -f /var/cache/apk/*
